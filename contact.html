@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оставить заявку</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header>
+            <nav class="nav">
+                <div class="container">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Лапка" class="logo-paw"> Домашние животные
+                    </div>
+                    <div class="menu">
+                        <a href="index.html">Главная</a>
+                        <a href="catalog.html">Каталог</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+                <h1 class="form-title">Заявка на питомца</h1>
+
+                <form class="pet-form" action="/submit-application" method="POST">
+                    <div class="form-group">
+                        <label for="fullname">ФИО:</label>
+                        <input type="text" id="fullname" name="fullname" required placeholder="Иванов Иван Иванович">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+7 (999) 123-45-67">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="wishes">Ваши пожелания:</label>
+                        <textarea id="wishes" name="wishes" rows="4"
+                            placeholder="Опишите ваши пожелания к питомцу..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Отправить заявку</button>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="contacts">
+                    Контакты<br>
+                    Телефон: 89278005954<br>
+                    email: nastyasadh@gmail.com
+                </div>
+                <div class="copyright">
+                    ©Домашние животные.<br>
+                    Все права защищены.
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
