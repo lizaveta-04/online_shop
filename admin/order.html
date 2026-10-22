@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ №1002 — Админ-панель</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header>
+            <nav class="nav">
+                <div class="container">
+                    <div class="logo">
+                        🐾 Админ-панель
+                    </div>
+                    <div class="menu">
+                        <a href="../index.html" target="_blank">Магазин</a>
+                        <a href="dashboard.html">Дашборд</a>
+                        <a href="login.html">Выйти</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="admin-layout">
+            <aside class="sidebar">
+                <div class="sidebar-title">🐾 Админ-панель</div>
+                <div class="sidebar-section-title">Основное</div>
+                <ul class="sidebar-nav">
+                    <li><a href="dashboard.html" class="sidebar-link"><span class="sidebar-link-icon">📊</span> Дашборд</a></li>
+                </ul>
+                <div class="sidebar-section-title">Каталог</div>
+                <ul class="sidebar-nav">
+                    <li><a href="products.html" class="sidebar-link"><span class="sidebar-link-icon">📦</span> Товары</a></li>
+                    <li><a href="categories.html" class="sidebar-link"><span class="sidebar-link-icon">📁</span> Категории</a></li>
+                </ul>
+                <div class="sidebar-section-title">Продажи</div>
+                <ul class="sidebar-nav">
+                    <li><a href="orders.html" class="sidebar-link active"><span class="sidebar-link-icon">🛒</span> Заказы</a></li>
+                </ul>
+                <div class="sidebar-section-title">Обратная связь</div>
+                <ul class="sidebar-nav">
+                    <li><a href="applications.html" class="sidebar-link"><span class="sidebar-link-icon">📝</span> Заявки</a></li>
+                </ul>
+            </aside>
+
+            <div class="admin-content">
+                <ol class="breadcrumb">
+                    <li><a href="dashboard.html">Дашборд</a></li>
+                    <li><a href="orders.html">Заказы</a></li>
+                    <li>Заказ №1002</li>
+                </ol>
+
+                <div class="admin-header">
+                    <h1>Заказ №1002</h1>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <span class="badge badge-processing" style="font-size: 14px; padding: 6px 14px;">В обработке</span>
+                        <a href="orders.html" class="btn btn-outline">← К списку</a>
+                    </div>
+                </div>
+
+                <div class="order-details-grid">
+                    <div>
+                        <div class="card" style="margin-bottom: 20px;">
+                            <div class="card-header">📦 Состав заказа</div>
+                            <div class="card-body" style="padding: 0;">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Товар</th>
+                                            <th>Цена</th>
+                                            <th>Кол-во</th>
+                                            <th>Сумма</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Когтеточка высокая</td>
+                                            <td>2 000 ₽</td>
+                                            <td>1</td>
+                                            <td>2 000 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Миска для животных</td>
+                                            <td>700 ₽</td>
+                                            <td>2</td>
+                                            <td>1 400 ₽</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="3" style="text-align: right; font-weight: bold; color: #d86800; font-size: 16px;">Итого:</td>
+                                            <td style="font-weight: bold; color: #d86800; font-size: 16px;">3 400 ₽</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">📍 Данные доставки</div>
+                            <div class="card-body">
+                                <p style="margin: 0 0 8px;"><strong>Адрес:</strong> г. Казань, ул. Баумана, д. 42, кв. 15</p>
+                                <p style="margin: 0; color: #7a6a58; font-size: 14px;"><strong>Комментарий:</strong> Позвонить за час до доставки</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-details-sidebar">
+                        <div class="card">
+                            <h3 style="margin: 0 0 12px; color: #d86800; font-size: 15px;">👤 Покупатель</h3>
+                            <p style="margin: 0 0 6px;"><strong>Иванов И.И.</strong></p>
+                            <p style="margin: 0 0 6px; font-size: 14px; color: #7a6a58;">ivanov@example.com</p>
+                            <p style="margin: 0; font-size: 14px; color: #7a6a58;">+7 (999) 123-45-67</p>
+                        </div>
+
+                        <div class="card">
+                            <h3 style="margin: 0 0 12px; color: #d86800; font-size: 15px;">⚙️ Действия</h3>
+                            <form action="/admin/orders/1002/status" method="POST" style="display: flex; flex-direction: column; gap: 10px;">
+                                <div class="form-group">
+                                    <label for="status" style="font-size: 13px; margin-bottom: 4px;">Изменить статус:</label>
+                                    <select id="status" name="status" class="form-select">
+                                        <option value="pending">Новый</option>
+                                        <option value="processing" selected>В обработке</option>
+                                        <option value="shipped">Отправлен</option>
+                                        <option value="delivered">Доставлен</option>
+                                        <option value="cancelled">Отменён</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-sm" style="width: 100%;">Обновить статус</button>
+                            </form>
+                            <hr style="border: none; border-top: 1px solid #f0e6d6; margin: 15px 0;">
+                            <form action="/admin/orders/1002/cancel" method="POST" onsubmit="return confirm('Отменить заказ?');">
+                                <button type="submit" class="btn btn-danger btn-sm" style="width: 100%;">Отменить заказ</button>
+                            </form>
+                        </div>
+
+                        <div class="card">
+                            <h3 style="margin: 0 0 10px; color: #d86800; font-size: 15px;">📊 История статусов</h3>
+                            <div class="order-status-timeline">
+                                <div class="status-step">
+                                    <div class="status-dot completed"></div>
+                                    <div class="status-text">
+                                        <strong>Новый</strong>
+                                        <span>20.10.2025, 14:30</span>
+                                    </div>
+                                </div>
+                                <div class="status-step">
+                                    <div class="status-dot active"></div>
+                                    <div class="status-text">
+                                        <strong>В обработке</strong>
+                                        <span>20.10.2025, 16:00</span>
+                                    </div>
+                                </div>
+                                <div class="status-step">
+                                    <div class="status-dot"></div>
+                                    <div class="status-text">
+                                        <strong>Отправлен</strong>
+                                        <span>—</span>
+                                    </div>
+                                </div>
+                                <div class="status-step">
+                                    <div class="status-dot"></div>
+                                    <div class="status-text">
+                                        <strong>Доставлен</strong>
+                                        <span>—</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Категории — Админ-панель</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header>
+            <nav class="nav">
+                <div class="container">
+                    <div class="logo">
+                        🐾 Админ-панель
+                    </div>
+                    <div class="menu">
+                        <a href="../index.html" target="_blank">Магазин</a>
+                        <a href="dashboard.html">Дашборд</a>
+                        <a href="login.html">Выйти</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="admin-layout">
+            <aside class="sidebar">
+                <div class="sidebar-title">🐾 Админ-панель</div>
+                <div class="sidebar-section-title">Основное</div>
+                <ul class="sidebar-nav">
+                    <li><a href="dashboard.html" class="sidebar-link"><span class="sidebar-link-icon">📊</span> Дашборд</a></li>
+                </ul>
+                <div class="sidebar-section-title">Каталог</div>
+                <ul class="sidebar-nav">
+                    <li><a href="products.html" class="sidebar-link"><span class="sidebar-link-icon">📦</span> Товары</a></li>
+                    <li><a href="categories.html" class="sidebar-link active"><span class="sidebar-link-icon">📁</span> Категории</a></li>
+                </ul>
+                <div class="sidebar-section-title">Продажи</div>
+                <ul class="sidebar-nav">
+                    <li><a href="orders.html" class="sidebar-link"><span class="sidebar-link-icon">🛒</span> Заказы</a></li>
+                </ul>
+                <div class="sidebar-section-title">Обратная связь</div>
+                <ul class="sidebar-nav">
+                    <li><a href="applications.html" class="sidebar-link"><span class="sidebar-link-icon">📝</span> Заявки</a></li>
+                </ul>
+            </aside>
+
+            <div class="admin-content">
+                <ol class="breadcrumb">
+                    <li><a href="dashboard.html">Дашборд</a></li>
+                    <li>Категории</li>
+                </ol>
+
+                <div class="admin-header">
+                    <h1>Управление категориями</h1>
+                    <button class="btn btn-primary">+ Добавить категорию</button>
+                </div>
+
+                <div class="table-wrapper">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width: 60px;">ID</th>
+                                <th>Название</th>
+                                <th>Slug</th>
+                                <th>Кол-во товаров</th>
+                                <th>Действия</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><strong>Корма</strong></td>
+                                <td><code>korma</code></td>
+                                <td>18</td>
+                                <td>
+                                    <div class="actions">
+                                        <a href="#" class="btn btn-sm btn-secondary">✏️</a>
+                                        <a href="#" class="btn btn-sm btn-danger">🗑️</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><strong>Игрушки</strong></td>
+                                <td><code>igryushki</code></td>
+                                <td>12</td>
+                                <td>
+                                    <div class="actions">
+                                        <a href="#" class="btn btn-sm btn-secondary">✏️</a>
+                                        <a href="#" class="btn btn-sm btn-danger">🗑️</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><strong>Аксессуары</strong></td>
+                                <td><code>aksessuary</code></td>
+                                <td>8</td>
+                                <td>
+                                    <div class="actions">
+                                        <a href="#" class="btn btn-sm btn-secondary">✏️</a>
+                                        <a href="#" class="btn btn-sm btn-danger">🗑️</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><strong>Для грызунов</strong></td>
+                                <td><code>dlya-gryzunov</code></td>
+                                <td>5</td>
+                                <td>
+                                    <div class="actions">
+                                        <a href="#" class="btn btn-sm btn-secondary">✏️</a>
+                                        <a href="#" class="btn btn-sm btn-danger">🗑️</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><strong>Лежанки</strong></td>
+                                <td><code>lezhanki</code></td>
+                                <td>3</td>
+                                <td>
+                                    <div class="actions">
+                                        <a href="#" class="btn btn-sm btn-secondary">✏️</a>
+                                        <a href="#" class="btn btn-sm btn-danger">🗑️</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><strong>Гигиена</strong></td>
+                                <td><code>gidyena</code></td>
+                                <td>2</td>
+                                <td>
+                                    <div class="actions">
+                                        <a href="#" class="btn btn-sm btn-secondary">✏️</a>
+                                        <a href="#" class="btn btn-sm btn-danger">🗑️</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
