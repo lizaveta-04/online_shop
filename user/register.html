@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация — Домашние животные</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header>
+            <nav class="nav">
+                <div class="container">
+                    <div class="logo">
+                        🐾 Домашние животные
+                    </div>
+                    <div class="menu">
+                        <a href="../index.html">Главная</a>
+                        <a href="../catalog.html">Каталог</a>
+                        <a href="../contact.html">Оставить заявку</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="auth-page">
+                <div class="auth-card">
+                    <h1>Регистрация</h1>
+                    <form action="/register" method="POST">
+                        <div class="form-group">
+                            <label for="name">ФИО:</label>
+                            <input type="text" id="name" name="name" required placeholder="Иванов Иван Иванович">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Пароль:</label>
+                            <input type="password" id="password" name="password" required minlength="8" placeholder="Минимум 8 символов">
+                        </div>
+                        <div class="form-group">
+                            <label for="password_confirmation">Подтверждение пароля:</label>
+                            <input type="password" id="password_confirmation" name="password_confirmation" required placeholder="Повторите пароль">
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">Зарегистрироваться</button>
+                    </form>
+                    <div class="auth-links">
+                        <p>Уже есть аккаунт? <a href="login.html">Войти</a></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="contacts">
+                    Контакты<br>
+                    Телефон: 89278005954<br>
+                    email: nastyasadh@gmail.com
+                </div>
+                <div class="copyright">
+                    ©Домашние животные.<br>
+                    Все права защищены.
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа — Домашние животные</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header>
+            <nav class="nav">
+                <div class="container">
+                    <div class="logo">
+                        🐾 Домашние животные
+                    </div>
+                    <div class="menu">
+                        <a href="../index.html">Главная</a>
+                        <a href="../catalog.html">Каталог</a>
+                        <a href="../contact.html">Оставить заявку</a>
+                        <a href="profile.html">Профиль</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../catalog.html">Каталог</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li>Оформление</li>
+                </ol>
+
+                <h1 style="color: #d86800; margin: 10px 0 25px;">Оформление заказа</h1>
+
+                <div class="checkout-layout">
+                    <div>
+                        <div class="card" style="margin-bottom: 20px;">
+                            <div class="card-header">📍 Адрес доставки</div>
+                            <div class="card-body">
+                                <form action="/checkout" method="POST">
+                                    <div class="form-group">
+                                        <label for="address">Адрес доставки:</label>
+                                        <textarea id="address" name="address" class="form-control" rows="3" required placeholder="Город, улица, дом, квартира"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="comment">Комментарий к заказу:</label>
+                                        <textarea id="comment" name="comment" class="form-control" rows="3" placeholder="Пожелания к доставке, время и т.д."></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary submit-btn">Подтвердить заказ</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside>
+                        <div class="card">
+                            <div class="card-header">📦 Ваш заказ</div>
+                            <div class="card-body">
+                                <div class="checkout-order-item">
+                                    <img src="../images/product1.png" alt="" class="checkout-item-img" onerror="this.style.display='none'">
+                                    <div class="checkout-item-info">
+                                        <div class="checkout-item-name">Корм для собак, 600г</div>
+                                        <div class="checkout-item-detail">450 ₽ × 2</div>
+                                    </div>
+                                    <strong>900 ₽</strong>
+                                </div>
+                                <div class="checkout-order-item">
+                                    <img src="../images/product2.png" alt="" class="checkout-item-img" onerror="this.style.display='none'">
+                                    <div class="checkout-item-info">
+                                        <div class="checkout-item-name">Игрушка кость для собак</div>
+                                        <div class="checkout-item-detail">300 ₽ × 1</div>
+                                    </div>
+                                    <strong>300 ₽</strong>
+                                </div>
+                                <div class="checkout-order-item">
+                                    <img src="../images/product4.png" alt="" class="checkout-item-img" onerror="this.style.display='none'">
+                                    <div class="checkout-item-info">
+                                        <div class="checkout-item-name">Когтеточка высокая</div>
+                                        <div class="checkout-item-detail">2 000 ₽ × 1</div>
+                                    </div>
+                                    <strong>2 000 ₽</strong>
+                                </div>
+
+                                <div class="summary-row" style="margin-top: 15px;">
+                                    <span>Товары</span>
+                                    <span>3 200 ₽</span>
+                                </div>
+                                <div class="summary-row">
+                                    <span>Доставка</span>
+                                    <span>Бесплатно</span>
+                                </div>
+                                <div class="summary-total">
+                                    <span>Итого</span>
+                                    <span>3 200 ₽</span>
+                                </div>
+
+                                <a href="cart.html" class="btn btn-outline" style="width: 100%; margin-top: 15px; text-align: center;">Вернуться в корзину</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="contacts">
+                    Контакты<br>
+                    Телефон: 89278005954<br>
+                    email: nastyasadh@gmail.com
+                </div>
+                <div class="copyright">
+                    ©Домашние животные.<br>
+                    Все права защищены.
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
