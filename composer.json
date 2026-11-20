@@ -6,11 +6,13 @@
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
-        "php": "^8.3",
+        "php": "^8.5.12",
         "laravel/framework": "^13.17",
-        "laravel/tinker": "^3.0"
+        "laravel/tinker": "^3.0",
+        "laravel/ui": "*"
     },
     "require-dev": {
+        "barryvdh/laravel-ide-helper": "^3.8",
         "fakerphp/faker": "^1.23",
         "laravel/pail": "^1.2.5",
         "laravel/pao": "^1.0.6",

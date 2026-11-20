@@ -1,0 +1,21 @@
+{
+    "Dashboard": "Панель управления",
+    "You are logged in!": "Вы вошли в систему!",
+    "Login": "Вход",
+    "Register": "Регистрация",
+    "Logout": "Выход",
+    "Name": "ФИО",
+    "E-mail Address": "Email",
+    "Password": "Пароль",
+    "Confirm Password": "Подтверждение пароля",
+    "Remember Me": "Запомнить меня",
+    "Forgot Your Password?": "Забыли пароль?",
+    "Reset Password": "Сброс пароля",
+    "Send Password Reset Link": "Отправить ссылку для сброса пароля",
+    "Verify Your Email Address": "Подтвердите ваш email",
+    "A fresh verification link has been sent to your email address.": "Новая ссылка для подтверждения отправлена на ваш email.",
+    "Before proceeding, please check your email for a verification link.": "Перед продолжением проверьте почту и перейдите по ссылке подтверждения.",
+    "If you did not receive the email": "Если вы не получили письмо",
+    "click here to request another": "нажмите здесь, чтобы запросить ещё раз",
+    "Please confirm your password before continuing.": "Подтвердите пароль, чтобы продолжить."
+}
